@@ -9,51 +9,34 @@ if (!$con)
 
 mysql_select_db("agrif004_iOS", $con);
 
-// mysql_query("INSERT INTO home_auto (lights) VALUES ('on')");
+// Setters
 
 if(isset($_POST['action']))
 {
 	$json = json_decode($_POST['action']);
-}
-
-// Setters
-
-if(isset($json['set_lights']))
-{
-	mysql_query("UPDATE home_auto SET (lights = '" . ($json['set_lights']) ? "on" : "off" . "')");
-}
-
-if(isset($json['set_doors']))
-{
-	mysql_query("UPDATE home_auto SET (doors = '" . ($json['set_doors']) ? "locked" : "unlocked" . "')");
-}
-
-if(isset($json['set_thermo']))
-{
-	mysql_query("UPDATE home_auto SET (thermo = " . $json['set_thermo'] . ")");
-}
-
-if(isset($json['set_garage']))
-{
-	mysql_query("UPDATE home_auto SET (garage = '" . ($json['set_garage']) ? "open" : "closed" . "')");
+	$columns = array("lights", "doors", "thermo", "garage");
+	foreach($columns as $column)
+	{
+		if(isset($json->$column))
+		{
+			$value = ($column == "thermo") ? $json->$column : '"' . $json->$column . '"';
+			mysql_query("UPDATE home_auto SET " . $column . " = " . $value);
+		}
+	}
 }
 
 // Getters
 
-if(isset($_POST['select_lights']))
+$to_json = array();
+$result  = mysql_query("SELECT * FROM home_auto");
+while($row = mysql_fetch_array($result))
 {
-	$result = mysql_query("SELECT * FROM home_auto");
-	$to_json = array();
-	while($row = mysql_fetch_array($result))
-  {
-  	$to_json["lights"] = $row["lights"];
-  	$to_json["doors"]  = $row["doors"];
-  	$to_json["thermo"] = $row["thermo"];
-  	$to_json["garage"] = $row["garage"];
-  }
-  echo json_encode($to_json);
-
-} 
+	$to_json["lights"] = $row["lights"];
+  $to_json["doors"]  = $row["doors"];
+  $to_json["thermo"] = $row["thermo"];
+  $to_json["garage"] = $row["garage"];
+}
+echo json_encode($to_json);
 
 mysql_close($con);
 
