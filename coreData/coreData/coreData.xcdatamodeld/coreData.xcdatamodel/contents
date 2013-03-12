@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="1000" defaultValueString="0" syncable="YES"/>
+        <attribute name="married" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" maxValueString="50" defaultValueString="John Doe" syncable="YES"/>
+        <relationship name="scriptures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scripture" inverseName="people" inverseEntity="Scripture" syncable="YES"/>
+    </entity>
+    <entity name="Scripture" representedClassName="Scripture" syncable="YES">
+        <attribute name="reference" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="scriptures" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" parentEntity="Person" syncable="YES">
+        <attribute name="schoolYear" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="4" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Student" positionX="286" positionY="-4" width="128" height="58"/>
+        <element name="Scripture" positionX="-65" positionY="270" width="128" height="88"/>
+    </elements>
+</model>
