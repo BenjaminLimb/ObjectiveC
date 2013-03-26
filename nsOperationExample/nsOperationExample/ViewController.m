@@ -31,25 +31,15 @@
 }
 
 - (IBAction)getJSON:(id)sender {
-    NSLog(@"1");
-    assert(theURLDisplay.text != nil);
-    
-    
-    getJSONFromURL *theJSONRequest = [[getJSONFromURL alloc]initWithURL:
-                                      [NSURL URLWithString:
-                                       [theURLDisplay text]]];
-    NSLog(@"2");
-    
-    
-    [self.queue addOperation:theJSONRequest];
-    
-    // run the main method from theJSONRequest
-     //[theJSONRequest main];
-        NSLog(@"3");
-    
    
-    NSLog(@"%@", theJSONRequest.JSONDictionary);
-    NSLog(@"is now finished");
+    if(theURLDisplay.text != nil)
+    {
+        // an instance of theJSONRequest that will get a JSON object from the a given URL
+        getJSONFromURL *theJSONRequest = [[getJSONFromURL alloc]initWithURL:[NSURL URLWithString:[theURLDisplay text]] andView:self];
+    
+        // add the operation to the queue
+        [self.queue addOperation:theJSONRequest];
+    }
     
 }
 
@@ -57,6 +47,9 @@
 {
     NSLog(@"logresults");
     
-    NSLog(@"%@", JSONDictionary);
+    NSLog(@"from the view: %@", JSONDictionary);
+    
+    _lightsDisplay.text = [JSONDictionary objectForKey:@"lights"];
+    
 }
 @end

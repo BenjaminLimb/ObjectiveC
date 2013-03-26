@@ -7,12 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ViewController.h"
 
 @interface getJSONFromURL : NSOperation
 
 @property (strong, atomic) NSURL * theURL;
 @property (strong, atomic) NSDictionary *JSONDictionary;
 -(id) initWithURL:(NSURL *)aURL;
+@property (strong) UIViewController *theView;
+
+-(id) initWithURL:(NSURL *)aURL andView:(UIViewController *)aView;
+
+-(void)setViewController:(UIViewController *)theView;
+
 
 
 @end

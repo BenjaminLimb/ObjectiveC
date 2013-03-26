@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "getJSONFromURL.h"
+
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *theURLDisplay;
 @property (nonatomic, strong) NSOperationQueue *queue;
-
+@property (weak, nonatomic) IBOutlet UILabel *lightsDisplay;
 
 - (IBAction)getJSON:(id)sender;
-
+- (void)logResults:(NSDictionary *)JSONDictionary;
 @end

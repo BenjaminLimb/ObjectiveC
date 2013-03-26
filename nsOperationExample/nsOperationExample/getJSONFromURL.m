@@ -25,7 +25,36 @@
         self-> theURL = [aURL copy];
         assert(theURL != nil);
     }
+    
     return self;
+}
+
+
+-(id) initWithURL:(NSURL *)aURL andView:(UIViewController *)aView
+{
+    assert(aURL != nil);
+    
+    self = [super init];
+    
+    if (self != nil)
+    {
+        // ask brother barney about arrow below
+        self.theURL = [aURL copy];
+        assert(theURL != nil);
+        self.theView = aView;
+    }
+    
+    
+    
+    return self;
+}
+
+
+
+-(void)setViewController:(ViewController *)theView
+{
+    assert(theView != nil);
+    self.theView = theView;
 }
 
 -(void)main
@@ -40,10 +69,14 @@
     
     self.JSONDictionary = [NSJSONSerialization JSONObjectWithData:theData options:kNilOptions error:&theError];
     
-    [self performSelectorOnMainThread:@selector(logResults:) withObject:self.JSONDictionary waitUntilDone:NO];
+    NSLog(@"from inside the NSOperation: %@", self.JSONDictionary);
     
-    NSLog(@"%@", self.JSONDictionary);
-    NSLog(@"main1");
+        
+    [_theView performSelectorOnMainThread:@selector(logResults:) withObject:JSONDictionary waitUntilDone:false];
+    
+    
 }
+
+
 
 @end
