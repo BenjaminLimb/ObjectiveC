@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface ViewController : UIViewController
+
+@property (strong)CLLocationManager *locationManager;
+@property (strong)NSDictionary *theLocation;
+
+- (void)initializeLocationManager;
+- (NSDictionary*)initializeLocations;
+- (CLRegion*)mapDictionaryToRegion:(NSDictionary*)dictionary;
 
 @end

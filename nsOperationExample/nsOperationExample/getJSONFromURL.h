@@ -13,8 +13,9 @@
 
 @property (strong, atomic) NSURL * theURL;
 @property (strong, atomic) NSDictionary *JSONDictionary;
--(id) initWithURL:(NSURL *)aURL;
 @property (strong) UIViewController *theView;
+
+-(id) initWithURL:(NSURL *)aURL;
 
 -(id) initWithURL:(NSURL *)aURL andView:(UIViewController *)aView;
 

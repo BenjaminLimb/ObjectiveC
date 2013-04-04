@@ -38,7 +38,6 @@
     
     if (self != nil)
     {
-        // ask brother barney about arrow below
         self.theURL = [aURL copy];
         assert(theURL != nil);
         self.theView = aView;
@@ -71,7 +70,6 @@
     
     NSLog(@"from inside the NSOperation: %@", self.JSONDictionary);
     
-        
     [_theView performSelectorOnMainThread:@selector(logResults:) withObject:JSONDictionary waitUntilDone:false];
     
     

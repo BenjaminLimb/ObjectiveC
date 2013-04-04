@@ -23,10 +23,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Do any additional setup after loading the view, typically from a nib.
+
+    
     MainViewController *caller = [self delegate];
+    
     ServerSettings *theSettings = [caller getCurrentServerSettings];
-    serverAddress.text = theSettings.url;
-	// Do any additional setup after loading the view, typically from a nib.
+    if (theSettings != nil)
+    {
+        serverAddress.text = theSettings.url;
+    }
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MainViewController.h"
 
-@interface ChangeStatus : NSObject
+
+@interface ChangeStatus : NSOperation
+
+@property (strong) NSString *lights;
+@property (strong) NSString *doors;
+@property (strong) NSString *temp;
+
+@property (strong, atomic) NSURL * theURL;
+@property (strong, atomic) NSDictionary *JSONDictionary;
+@property (strong) UIViewController *theView;
+@property (nonatomic, strong) NSOperationQueue *queue;
+
+
+-(id) initWithURL:(NSURL *)aURL;
+
+-(id) initWithURL:(NSURL *)aURL andView:(UIViewController *)aView;
+
+-(void)setViewController:(UIViewController *)theView;
+
+
 
 @end

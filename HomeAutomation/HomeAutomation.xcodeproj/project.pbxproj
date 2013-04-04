@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9062625E170BC69E0021510A /* lights_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 90626259170BC69E0021510A /* lights_off.png */; };
+		9062625F170BC69E0021510A /* lights_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9062625A170BC69E0021510A /* lights_on.png */; };
+		90626261170BC69E0021510A /* temperature.png in Resources */ = {isa = PBXBuildFile; fileRef = 9062625C170BC69E0021510A /* temperature.png */; };
+		90626265170BD5FE0021510A /* locked.png in Resources */ = {isa = PBXBuildFile; fileRef = 90626263170BD5FE0021510A /* locked.png */; };
+		90626266170BD5FE0021510A /* unlocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 90626264170BD5FE0021510A /* unlocked.png */; };
+		90A08967170D03DD00FA40F8 /* CurrentStatusGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A08966170D03DD00FA40F8 /* CurrentStatusGetter.m */; };
+		90A0896A170D13A500FA40F8 /* ChangeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A08969170D13A500FA40F8 /* ChangeStatus.m */; };
 		F9414D05170B413E00F47AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9414D04170B413E00F47AB5 /* UIKit.framework */; };
 		F9414D07170B413E00F47AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9414D06170B413E00F47AB5 /* Foundation.framework */; };
 		F9414D09170B413E00F47AB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9414D08170B413E00F47AB5 /* CoreGraphics.framework */; };
@@ -25,6 +32,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90626259170BC69E0021510A /* lights_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lights_off.png; sourceTree = "<group>"; };
+		9062625A170BC69E0021510A /* lights_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lights_on.png; sourceTree = "<group>"; };
+		9062625C170BC69E0021510A /* temperature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temperature.png; sourceTree = "<group>"; };
+		90626263170BD5FE0021510A /* locked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locked.png; sourceTree = "<group>"; };
+		90626264170BD5FE0021510A /* unlocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlocked.png; sourceTree = "<group>"; };
+		90A08965170D03DD00FA40F8 /* CurrentStatusGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentStatusGetter.h; sourceTree = "<group>"; };
+		90A08966170D03DD00FA40F8 /* CurrentStatusGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentStatusGetter.m; sourceTree = "<group>"; };
+		90A08968170D13A500FA40F8 /* ChangeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeStatus.h; sourceTree = "<group>"; };
+		90A08969170D13A500FA40F8 /* ChangeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeStatus.m; sourceTree = "<group>"; };
 		F9414D01170B413E00F47AB5 /* HomeAutomation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAutomation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9414D04170B413E00F47AB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F9414D06170B413E00F47AB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +122,10 @@
 				F9414D2F170B418A00F47AB5 /* ServerSettings.h */,
 				F9414D30170B418A00F47AB5 /* ServerSettings.m */,
 				F9414D0D170B413E00F47AB5 /* Supporting Files */,
+				90A08965170D03DD00FA40F8 /* CurrentStatusGetter.h */,
+				90A08966170D03DD00FA40F8 /* CurrentStatusGetter.m */,
+				90A08968170D13A500FA40F8 /* ChangeStatus.h */,
+				90A08969170D13A500FA40F8 /* ChangeStatus.m */,
 			);
 			path = HomeAutomation;
 			sourceTree = "<group>";
@@ -113,8 +133,13 @@
 		F9414D0D170B413E00F47AB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90626263170BD5FE0021510A /* locked.png */,
+				90626264170BD5FE0021510A /* unlocked.png */,
 				F9414D0E170B413E00F47AB5 /* HomeAutomation-Info.plist */,
 				F9414D0F170B413E00F47AB5 /* InfoPlist.strings */,
+				90626259170BC69E0021510A /* lights_off.png */,
+				9062625A170BC69E0021510A /* lights_on.png */,
+				9062625C170BC69E0021510A /* temperature.png */,
 				F9414D12170B413E00F47AB5 /* main.m */,
 				F9414D14170B413E00F47AB5 /* HomeAutomation-Prefix.pch */,
 				F9414D18170B413E00F47AB5 /* Default.png */,
@@ -180,6 +205,11 @@
 				F9414D1B170B413E00F47AB5 /* Default@2x.png in Resources */,
 				F9414D1D170B413E00F47AB5 /* Default-568h@2x.png in Resources */,
 				F9414D20170B413E00F47AB5 /* MainStoryboard.storyboard in Resources */,
+				9062625E170BC69E0021510A /* lights_off.png in Resources */,
+				9062625F170BC69E0021510A /* lights_on.png in Resources */,
+				90626261170BC69E0021510A /* temperature.png in Resources */,
+				90626265170BD5FE0021510A /* locked.png in Resources */,
+				90626266170BD5FE0021510A /* unlocked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +226,8 @@
 				F9414D26170B413E00F47AB5 /* MainViewController.m in Sources */,
 				F9414D29170B413E00F47AB5 /* FlipsideViewController.m in Sources */,
 				F9414D31170B418A00F47AB5 /* ServerSettings.m in Sources */,
+				90A08967170D03DD00FA40F8 /* CurrentStatusGetter.m in Sources */,
+				90A0896A170D13A500FA40F8 /* ChangeStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +350,7 @@
 				F9414D2E170B413E00F47AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

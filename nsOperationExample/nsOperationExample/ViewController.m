@@ -40,11 +40,10 @@
         // add the operation to the queue
         [self.queue addOperation:theJSONRequest];
     }
-    
 }
 
--(void)logResults:(NSDictionary *)JSONDictionary
-{
+-(void)logResults:(NSDictionary *)JSONDictionary{
+
     NSLog(@"logresults");
     
     NSLog(@"from the view: %@", JSONDictionary);
