@@ -31,7 +31,7 @@ $to_json = array();
 $result  = mysql_query("SELECT * FROM home_auto");
 while($row = mysql_fetch_array($result))
 {
-	$to_json["lights"] = $row["lights"];
+  $to_json["lights"] = $row["lights"];
   $to_json["doors"]  = $row["doors"];
   $to_json["thermo"] = $row["thermo"];
   $to_json["garage"] = $row["garage"];
