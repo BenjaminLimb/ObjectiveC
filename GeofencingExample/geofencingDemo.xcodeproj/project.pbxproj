@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90DA67EA170B1EB200A61709 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DA67E9170B1EB200A61709 /* UIKit.framework */; };
+		90DA67EC170B1EB200A61709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DA67EB170B1EB200A61709 /* Foundation.framework */; };
+		90DA67EE170B1EB200A61709 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DA67ED170B1EB200A61709 /* CoreGraphics.framework */; };
+		90DA67F4170B1EB200A61709 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90DA67F2170B1EB200A61709 /* InfoPlist.strings */; };
+		90DA67F6170B1EB200A61709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DA67F5170B1EB200A61709 /* main.m */; };
+		90DA67FA170B1EB200A61709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DA67F9170B1EB200A61709 /* AppDelegate.m */; };
+		90DA67FC170B1EB200A61709 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90DA67FB170B1EB200A61709 /* Default.png */; };
+		90DA67FE170B1EB200A61709 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90DA67FD170B1EB200A61709 /* Default@2x.png */; };
+		90DA6800170B1EB200A61709 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90DA67FF170B1EB200A61709 /* Default-568h@2x.png */; };
+		90DA6803170B1EB200A61709 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DA6801170B1EB200A61709 /* MainStoryboard.storyboard */; };
+		90DA6806170B1EB200A61709 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DA6805170B1EB200A61709 /* ViewController.m */; };
+		90DA680D170B225700A61709 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DA680C170B225700A61709 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90DA67E6170B1EB200A61709 /* geofencingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geofencingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90DA67E9170B1EB200A61709 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90DA67EB170B1EB200A61709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90DA67ED170B1EB200A61709 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90DA67F1170B1EB200A61709 /* geofencingDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "geofencingDemo-Info.plist"; sourceTree = "<group>"; };
+		90DA67F3170B1EB200A61709 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90DA67F5170B1EB200A61709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90DA67F7170B1EB200A61709 /* geofencingDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "geofencingDemo-Prefix.pch"; sourceTree = "<group>"; };
+		90DA67F8170B1EB200A61709 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90DA67F9170B1EB200A61709 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90DA67FB170B1EB200A61709 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		90DA67FD170B1EB200A61709 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		90DA67FF170B1EB200A61709 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		90DA6802170B1EB200A61709 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		90DA6804170B1EB200A61709 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		90DA6805170B1EB200A61709 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		90DA680C170B225700A61709 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90DA67E3170B1EB200A61709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DA680D170B225700A61709 /* CoreLocation.framework in Frameworks */,
+				90DA67EA170B1EB200A61709 /* UIKit.framework in Frameworks */,
+				90DA67EC170B1EB200A61709 /* Foundation.framework in Frameworks */,
+				90DA67EE170B1EB200A61709 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90DA67DD170B1EB200A61709 = {
+			isa = PBXGroup;
+			children = (
+				90DA680C170B225700A61709 /* CoreLocation.framework */,
+				90DA67EF170B1EB200A61709 /* geofencingDemo */,
+				90DA67E8170B1EB200A61709 /* Frameworks */,
+				90DA67E7170B1EB200A61709 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90DA67E7170B1EB200A61709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90DA67E6170B1EB200A61709 /* geofencingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90DA67E8170B1EB200A61709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90DA67E9170B1EB200A61709 /* UIKit.framework */,
+				90DA67EB170B1EB200A61709 /* Foundation.framework */,
+				90DA67ED170B1EB200A61709 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90DA67EF170B1EB200A61709 /* geofencingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				90DA67F8170B1EB200A61709 /* AppDelegate.h */,
+				90DA67F9170B1EB200A61709 /* AppDelegate.m */,
+				90DA6801170B1EB200A61709 /* MainStoryboard.storyboard */,
+				90DA6804170B1EB200A61709 /* ViewController.h */,
+				90DA6805170B1EB200A61709 /* ViewController.m */,
+				90DA67F0170B1EB200A61709 /* Supporting Files */,
+			);
+			path = geofencingDemo;
+			sourceTree = "<group>";
+		};
+		90DA67F0170B1EB200A61709 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90DA67F1170B1EB200A61709 /* geofencingDemo-Info.plist */,
+				90DA67F2170B1EB200A61709 /* InfoPlist.strings */,
+				90DA67F5170B1EB200A61709 /* main.m */,
+				90DA67F7170B1EB200A61709 /* geofencingDemo-Prefix.pch */,
+				90DA67FB170B1EB200A61709 /* Default.png */,
+				90DA67FD170B1EB200A61709 /* Default@2x.png */,
+				90DA67FF170B1EB200A61709 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90DA67E5170B1EB200A61709 /* geofencingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90DA6809170B1EB200A61709 /* Build configuration list for PBXNativeTarget "geofencingDemo" */;
+			buildPhases = (
+				90DA67E2170B1EB200A61709 /* Sources */,
+				90DA67E3170B1EB200A61709 /* Frameworks */,
+				90DA67E4170B1EB200A61709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = geofencingDemo;
+			productName = geofencingDemo;
+			productReference = 90DA67E6170B1EB200A61709 /* geofencingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90DA67DE170B1EB200A61709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = r2d2;
+			};
+			buildConfigurationList = 90DA67E1170B1EB200A61709 /* Build configuration list for PBXProject "geofencingDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90DA67DD170B1EB200A61709;
+			productRefGroup = 90DA67E7170B1EB200A61709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90DA67E5170B1EB200A61709 /* geofencingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90DA67E4170B1EB200A61709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DA67F4170B1EB200A61709 /* InfoPlist.strings in Resources */,
+				90DA67FC170B1EB200A61709 /* Default.png in Resources */,
+				90DA67FE170B1EB200A61709 /* Default@2x.png in Resources */,
+				90DA6800170B1EB200A61709 /* Default-568h@2x.png in Resources */,
+				90DA6803170B1EB200A61709 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90DA67E2170B1EB200A61709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DA67F6170B1EB200A61709 /* main.m in Sources */,
+				90DA67FA170B1EB200A61709 /* AppDelegate.m in Sources */,
+				90DA6806170B1EB200A61709 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90DA67F2170B1EB200A61709 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90DA67F3170B1EB200A61709 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90DA6801170B1EB200A61709 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90DA6802170B1EB200A61709 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90DA6807170B1EB200A61709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90DA6808170B1EB200A61709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90DA680A170B1EB200A61709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "geofencingDemo/geofencingDemo-Prefix.pch";
+				INFOPLIST_FILE = "geofencingDemo/geofencingDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90DA680B170B1EB200A61709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "geofencingDemo/geofencingDemo-Prefix.pch";
+				INFOPLIST_FILE = "geofencingDemo/geofencingDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90DA67E1170B1EB200A61709 /* Build configuration list for PBXProject "geofencingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DA6807170B1EB200A61709 /* Debug */,
+				90DA6808170B1EB200A61709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90DA6809170B1EB200A61709 /* Build configuration list for PBXNativeTarget "geofencingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DA680A170B1EB200A61709 /* Debug */,
+				90DA680B170B1EB200A61709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90DA67DE170B1EB200A61709 /* Project object */;
+}
