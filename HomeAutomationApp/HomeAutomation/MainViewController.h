@@ -17,6 +17,9 @@
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) ServerSettings *currentServerSettings;
+- (ServerSettings*) getCurrentServerSettings;
+
 @property (weak, nonatomic) IBOutlet UIImageView *lightsIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *doorsIcon;
 @property (weak, nonatomic) IBOutlet UILabel *tempDisplay;
@@ -30,7 +33,7 @@
 - (IBAction)lightsButton:(id)sender;
 - (IBAction)doorsButton:(id)sender;
 
-- (ServerSettings*) getCurrentServerSettings;
+
 
 -(void)getCurrentStatus;
 -(void)updateCurrentStatus;

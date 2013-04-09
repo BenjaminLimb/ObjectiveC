@@ -68,10 +68,10 @@
     aLocation.url= controller.serverAddress.text;
     
     [_managedObjectContext save:&aError];
-            
-    //@"http://sandbox.markmccann.me/objective-c/json.php";
     
 }
+
+    //@"http://sandbox.markmccann.me/objective-c/json.php";
 
 - (IBAction)lightsButton:(id)sender {
     

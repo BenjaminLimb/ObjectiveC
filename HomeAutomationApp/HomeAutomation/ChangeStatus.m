@@ -68,23 +68,12 @@
     NSMutableString *postString = [[NSMutableString alloc]init];
     
     [postString appendString:@"action={\"lights\":\""];
-    
     [postString appendString:lights];
-    
     [postString appendString:@"\",\"doors\":\""];
-    
     [postString appendString:doors];
-    
     [postString appendString:@"\"}"];
     
     NSLog(@"the postString: %@", postString);
-    
-    
-    
-   // @"action={\"lights\":\"on\",\"doors\":\"unlocked\",\"thermo\":\"90\",\"garage\":\"closed\"}";
-    
-    // manually change these values before sending them
-   // NSString *postString = @"action={\"lights\":\"on\",\"doors\":\"unlocked\",\"thermo\":\"90\",\"garage\":\"closed\"}";
     
     [request setHTTPBody:[postString dataUsingEncoding:NSUTF8StringEncoding]];
         
@@ -93,11 +82,18 @@
     
     [_theView performSelectorOnMainThread:@selector(getCurrentStatus) withObject:nil waitUntilDone:false];
     
-    
-        
-    
 }
 
 
 
 @end
+
+
+
+
+
+
+// @"action={\"lights\":\"on\",\"doors\":\"unlocked\",\"thermo\":\"90\",\"garage\":\"closed\"}";
+
+// manually change these values before sending them
+// NSString *postString = @"action={\"lights\":\"on\",\"doors\":\"unlocked\",\"thermo\":\"90\",\"garage\":\"closed\"}";
